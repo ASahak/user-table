@@ -1,0 +1,42 @@
+{
+  "name": "user-table-server",
+  "version": "1.0.0",
+  "description": "node server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js localhost 3080",
+    "start": "NODE_ENV=production node index.js",
+    "css:watch": "sass --no-source-map --watch static/styles/_main.scss:static/styles/css/main.css"
+  },
+  "author": "ASahak",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "@hapi/joi-date": "^2.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "dotenv-expand": "5.1.0",
+    "dotenv-webpack": "^1.8.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.8",
+    "mongoose": "^5.9.16",
+    "mongoose-slug-generator": "^1.0.4",
+    "mongoose-slug-updater": "^3.2.3",
+    "multer": "^1.4.2",
+    "node-sass": "^4.14.1",
+    "path": "^0.12.7",
+    "postcss-flexbugs-fixes": "4.1.0",
+    "postcss-loader": "3.0.0",
+    "postcss-normalize": "7.0.1",
+    "resolve": "1.12.0",
+    "resolve-url-loader": "3.1.0",
+    "sass": "^1.26.8",
+    "sass-loader": "7.2.0"
+  },
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "nodemon": "^2.0.4",
+    "url-loader": "^2.3.0",
+    "webpack": "^4.43.0"
+  }
+}
