@@ -1,31 +1,13 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[0],{
 
-/***/ "./src/app/shared/services/Base.service.js":
-/*!*************************************************!*\
-  !*** ./src/app/shared/services/Base.service.js ***!
-  \*************************************************/
-/*! exports provided: BaseService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./src/app/app.component.spec.ts":
+/*!***************************************!*\
+  !*** ./src/app/app.component.spec.ts ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BaseService", function() { return BaseService; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-
-
-class BaseService {
-    constructor() {
-    }
-}
-BaseService.ɵfac = function BaseService_Factory(t) { return new (t || BaseService)(); };
-BaseService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: BaseService, factory: BaseService.ɵfac, providedIn: 'root' });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BaseService, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
-        args: [{
-                providedIn: 'root'
-            }]
-    }], function () { return []; }, null); })();
-//# sourceMappingURL=Base.service.js.map
+throw new Error("Module build failed (from ./node_modules/@ngtools/webpack/src/index.js):\nError: C:\\Users\\ruala\\Desktop\\ASahak\\daser\\node\\user-table\\frontend\\src\\app\\app.component.spec.ts is missing from the TypeScript compilation. Please make sure it is in your tsconfig via the 'files' or 'include' property.\n    at AngularCompilerPlugin.getCompiledFile (C:\\Users\\ruala\\Desktop\\ASahak\\daser\\node\\user-table\\frontend\\node_modules\\@ngtools\\webpack\\src\\angular_compiler_plugin.js:938:23)\n    at C:\\Users\\ruala\\Desktop\\ASahak\\daser\\node\\user-table\\frontend\\node_modules\\@ngtools\\webpack\\src\\loader.js:42:31\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)");
 
 /***/ })
 

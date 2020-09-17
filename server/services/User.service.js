@@ -16,11 +16,19 @@ module.exports = class UserService {
         }
     }
 
-    static async get_users ({page, pageCount}) {
+    static async get_users ({role, page, pageCount, name}) {
         try {
+            const options = {
+                ...(name && {fname: {'$regex': name, '$options': 'i' }}),
+                ...((role && role !== '*') && {role})
+            };
             return {
-                usersCount: await User.find({}).count(),
-                users: await User.find({}).limit(+pageCount).skip((+page === 1 ? 0 : +page - 1) * +pageCount)
+                usersCount: await User.find({
+                    ...options
+                }).count(),
+                users: await User.find({
+                    ...options,
+                }).limit(+pageCount).skip((+page === 1 ? 0 : +page - 1) * +pageCount)
             };
         } catch (err) {
             throw Error(err);
