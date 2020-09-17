@@ -1,0 +1,9 @@
+<div class="paginate-row">
+  <p>
+    <a
+      [class.active]="+activePage === i + 1"
+      href="javascript:void(0)"
+      (click)="goToPage(i + 1)"
+      *ngFor="let item of [].constructor(pages); let i = index">{{i + 1}}</a>
+  </p>
+</div>

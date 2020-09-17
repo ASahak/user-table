@@ -1,0 +1,9 @@
+<div class="filter-select-bar">
+  <span>Role</span>
+  <select #selectRole (change)="roleChange(selectRole.value)">
+    <option value="*">All</option>
+    <option value="artist">Artist</option>
+    <option value="designer">Designer</option>
+    <option value="art-manager">Art manager</option>
+  </select>
+</div>

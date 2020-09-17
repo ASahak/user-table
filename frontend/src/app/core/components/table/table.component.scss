@@ -1,0 +1,51 @@
+.table-row {
+  margin-top: 40px;
+  min-height: 80px;
+  table {
+    position: relative;
+    border-collapse: collapse;
+    width: 100%;
+    thead {
+      th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        &.add-parent {
+          padding: 0;
+          button {
+            padding: 10px;
+            border: 0;
+            width: 100%;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    tbody {
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      .actions-td {
+        text-align: center;
+        button {
+          padding: 6px 10px;
+          border: 0;
+          cursor: pointer;
+          margin: 0 5px;
+
+        }
+      }
+    }
+    p {
+      position: absolute;
+      text-align: center;
+      margin-top: 0;
+      width: calc(100% - 2px);
+      border: 1px solid #ddd;
+      height: 40px;
+      line-height: 40px;
+      border-top: 0;
+      color: #666;
+    }
+  }
+}

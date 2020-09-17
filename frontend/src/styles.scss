@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~ngx-toastr/toastr';
+@import "mixins";
+@import "variables";
+* {
+  margin: 0;
+  font-family: "system-ui";
+}
+.container-ath {
+  width: 80%;
+  margin: auto;
+}
+.row-ath {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

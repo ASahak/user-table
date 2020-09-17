@@ -1,0 +1,33 @@
+<div class="table-row">
+  <table>
+    <thead>
+      <tr>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th class="add-parent">
+          <button (click)="openDialog('add', 'Add Row')">Add Row</button>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngIf="rows.length then dataRows; else dataNotFound"></ng-container>
+    </tbody>
+    <ng-template #dataRows>
+      <tr *ngFor="let item of rows; index as i">
+        <td>{{item.fname}}</td>
+        <td>{{item.lname}}</td>
+        <td>{{item.email}}</td>
+        <td>{{getRole(item.role)}}</td>
+        <td class="actions-td">
+          <button (click)="editRow(item)">Edit</button>
+          <button (click)="removeRow(item)">Remove</button>
+        </td>
+      </tr>
+    </ng-template>
+    <ng-template #dataNotFound>
+      <p>No Data</p>
+    </ng-template>
+  </table>
+</div>

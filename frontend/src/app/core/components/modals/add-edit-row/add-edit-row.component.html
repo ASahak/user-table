@@ -1,0 +1,47 @@
+<div>
+  <h3>{{config.data.title}}</h3>
+  <form [formGroup]="addEditRowForm" (submit)="save()">
+    <div>
+      <input
+        type="email"
+        placeholder="Email"
+        formControlName="email"
+      />
+      <app-control-messages *ngIf="addEditRowForm.get('email')" [control]="addEditRowForm.get('email')"></app-control-messages>
+    </div>
+    <div>
+      <input
+        type="text"
+        placeholder="First Name"
+        formControlName="fname"
+      />
+      <app-control-messages *ngIf="addEditRowForm.get('fname')" [control]="addEditRowForm.get('fname')"></app-control-messages>
+    </div>
+    <div>
+      <input
+        type="text"
+        placeholder="Last Name"
+        formControlName="lname"
+      />
+      <app-control-messages *ngIf="addEditRowForm.get('lname')" [control]="addEditRowForm.get('lname')"></app-control-messages>
+    </div>
+    <div>
+      <select formControlName="role">
+        <option value="*">All</option>
+        <option value="artist">Artist</option>
+        <option value="designer">Designer</option>
+        <option value="art-manager">Art manager</option>
+      </select>
+      <app-control-messages *ngIf="addEditRowForm.get('role')" [control]="addEditRowForm.get('role')"></app-control-messages>
+    </div>
+    <div class="actions-form">
+      <button (click)="onClose()">
+        Close
+      </button>
+      <button type="submit"
+        [disabled]="!addEditRowForm.valid">
+        Save
+      </button>
+    </div>
+  </form>
+</div>
